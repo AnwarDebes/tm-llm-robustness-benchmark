@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: "How Robust are Tsetlin Machines? An Adversarial Comparison with Fine-Tuned BERT on Counterfactual IMDb"
+type: software
+authors:
+  - family-names: Anwar
+    affiliation: "University of Agder (UiA)"
+    affiliation: "University of Agder (UiA), Centre for Artificial Intelligence Research (CAIR)"
+abstract: "How Robust are Tsetlin Machines? An Adversarial Comparison with Fine-Tuned BERT on Counterfactual IMDb. Work in preparation."
+date-released: 2026-05-23
+license: MIT

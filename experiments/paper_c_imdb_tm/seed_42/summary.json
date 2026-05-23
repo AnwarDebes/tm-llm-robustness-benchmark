@@ -1,0 +1,13 @@
+{
+  "model": "TM (Drop-Clause)",
+  "dataset": "IMDb",
+  "seed": 42,
+  "clean_accuracy": 0.89904,
+  "counterfactual_accuracy": 0.6188524590163934,
+  "robustness_ratio_cf": 0.6883480813049402,
+  "textfooler_results": {
+    "adversarial_accuracy": null,
+    "attack_success_rate": null
+  },
+  "total_time": 1254.5553278923035
+}

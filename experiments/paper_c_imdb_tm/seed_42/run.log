@@ -1,0 +1,32 @@
+=== Paper C: TM Robustness on IMDb (seed=42) ===
+Loading IMDb...
+Vectorizing...
+
+Training TM: clauses=10000, epochs=20
+2026-05-02 20:00:48,591 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/3201a5ec836dac638412a932dacde82d83e549ad.ptx'.
+2026-05-02 20:00:48,593 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/89016a311bdbf3c0a8b45a95c9a4083dcbd88f19.ptx'.
+2026-05-02 20:00:48,594 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/d0add23ba02c3e6bf425e1e0f990c8c3b35e0030.ptx'.
+2026-05-02 20:00:48,595 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/f71fb0670b8df2a0be62e147eaca127f46a1d7dd.ptx'.
+2026-05-02 20:00:48,817 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/3201a5ec836dac638412a932dacde82d83e549ad.ptx'.
+2026-05-02 20:00:48,818 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/89016a311bdbf3c0a8b45a95c9a4083dcbd88f19.ptx'.
+2026-05-02 20:00:48,819 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/d0add23ba02c3e6bf425e1e0f990c8c3b35e0030.ptx'.
+2026-05-02 20:00:48,820 - tmu.clause_bank.clause_bank_cuda - INFO - Loading compiled CUDA module from '/tmp/tm_kernels/f71fb0670b8df2a0be62e147eaca127f46a1d7dd.ptx'.
+  E0: clean_acc=89.44% (best=89.44%)
+  E5: clean_acc=89.72% (best=89.72%)
+  E10: clean_acc=89.84% (best=89.98%)
+  E15: clean_acc=89.81% (best=89.98%)
+  E19: clean_acc=89.56% (best=89.98%)
+
+1. Clean accuracy: 89.98%
+
+2. Evaluating on Counterfactual IMDb...
+   Counterfactual accuracy: 62.91% (488 samples)
+
+3. TextFooler skipped (--skip_textfooler)
+
+=== Summary ===
+  Clean: 89.98%
+  Counterfactual: 62.91%
+  Robustness ratio (CF/clean): 0.6991
+
+Saved: /home/anward/project/paper-c-tm-robustness/experiments/paper_c_imdb_tm/seed_42/summary.json

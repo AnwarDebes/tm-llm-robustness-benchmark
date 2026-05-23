@@ -1,0 +1,20 @@
+{
+  "experiment": "paper_c_imdb_robustness",
+  "comparison": "TM vs BERT on counterfactual IMDb",
+  "models": {
+    "TM_DropClause": {
+      "clean_accuracy": 0.8998,
+      "counterfactual_accuracy": 0.6291,
+      "robustness_ratio": 0.699,
+      "config": {"clauses": 10000, "T": 8000, "s": 2.0, "clause_drop_p": 0.75}
+    },
+    "BERT_base": {
+      "clean_accuracy": 0.9040,
+      "counterfactual_accuracy": 0.8811,
+      "robustness_ratio": 0.975,
+      "config": {"model": "bert-base-uncased", "epochs": 3, "lr": 2e-5}
+    }
+  },
+  "finding": "BERT is substantially more robust than TM on counterfactual IMDb. TM degrades 30% while BERT degrades only 2.5%. This contradicts the hypothesis that TMs are more robust to counterfactual edits.",
+  "notes": "Clean accuracy on 1000-sample subset for BERT (90.40%) vs full test set for TM (89.98%). Counterfactual test set has 488 samples. TM uses BoW features which are brittle to synonym/paraphrase rewrites."
+}

@@ -1,0 +1,7 @@
+{
+  "model": "BERT-base",
+  "dataset": "IMDb",
+  "clean_accuracy": 0.904,
+  "counterfactual_accuracy": 0.8811475409836066,
+  "robustness_ratio": 0.9747207311765559
+}
